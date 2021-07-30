@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, sans-serif;
+  background-color: #ecedee;
+  color: #222;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.book {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+.book h1 {
+  margin-top: 0.5rem;
+  color: rgb(20, 9, 126);
+}
+.book h4 {
+  color: rgb(82, 82, 82);
+}
+.book p {
+  font-size: 0.75rem;
+  color: rgb(105, 105, 105);
+}
