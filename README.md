@@ -5,6 +5,7 @@ The Idea of this is to add individuality to components... basically add properti
 Props notes:
 
 [x] properties can be passed into components. "props" is the convention.
+
 [x] withing the components JSX you can acess those properties (ie props.image). thus any property passed in will be acessed this way. props is an object when passed in so this allows you to acess the name val pairs of that repective part.
 
 # Getting Started with Create React App

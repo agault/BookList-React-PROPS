@@ -67,3 +67,32 @@ const Book = (props) => {
 
 //1) what we are going to render "Greetings" component 2)Where to render
 reactDom.render(<BookList />, document.getElementById('root'))
+
+//OTHER WAYS OF ACESSING PROPS:
+
+//props can be acessed three ways 
+// 1)passing props and having props.
+// 2)pass props but define constant to not do props.x
+// 3)define toe properties of the object in the ()
+
+
+// const Book = (props) => {
+// const {image, title, author, price = 'props}   <- set as properties to be accessed
+//   return <article className="book">
+//     <img src={image}/>
+//     <h1>{title}</h1>
+//     <h4>{author}</h4>
+//     <p>{price}</p>
+//   </article>
+// }
+
+//OR
+
+// const Book = ({image, title, author, price}) => { <- set as properties to be accessed
+//   return <article className="book">
+//     <img src={image}/>
+//     <h1>{title}</h1>
+//     <h4>{author}</h4>
+//     <p>{price}</p>
+//   </article>
+// }
